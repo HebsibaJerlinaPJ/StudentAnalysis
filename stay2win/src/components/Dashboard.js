@@ -13,9 +13,9 @@ function Dashboard() {
         </div>
       </nav>
       <div className="container mt-5">
-        <div className="row">
+        <div className="row justify-content-center"> {/* This will center the cards horizontally */}
           {/* Student Data Card */}
-          <div className="col-md-4 mb-4 d-flex">
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
             <div className="card shadow-lg flex-fill" onClick={() => navigate('/student-data')}>
               <img
                 src="/assets/student-data.jpg"
@@ -33,7 +33,7 @@ function Dashboard() {
           </div>
 
           {/* Risk Analysis Card */}
-          <div className="col-md-4 mb-4 d-flex">
+          <div className="col-md-4 mb-4 d-flex justify-content-center">
             <div className="card shadow-lg flex-fill" onClick={() => navigate('/risk-analysis')}>
               <img
                 src="/assets/risk-analysis.jpg"
@@ -44,24 +44,6 @@ function Dashboard() {
                 <h5 className="card-title">Risk Analysis</h5>
                 <p className="card-text flex-grow-1">
                   Analyze and identify students at risk of dropping out based on attendance, grades, and behavioral data.
-                </p>
-                <button className="btn btn-primary align-self-start">Explore</button>
-              </div>
-            </div>
-          </div>
-
-          {/* Intervention Plans Card */}
-          <div className="col-md-4 mb-4 d-flex">
-            <div className="card shadow-lg flex-fill" onClick={() => navigate('/intervention-plans')}>
-              <img
-                src="/assets/intervention-plans.png"
-                className="card-img-top"
-                alt="Intervention Plans"
-              />
-              <div className="card-body d-flex flex-column">
-                <h5 className="card-title">Intervention Plans</h5>
-                <p className="card-text flex-grow-1">
-                  Create and manage personalized intervention plans, including counseling, tutoring, and mentorship programs.
                 </p>
                 <button className="btn btn-primary align-self-start">Explore</button>
               </div>
